@@ -2,13 +2,60 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/status"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Netattack Running"
-        android:textSize="22sp" />
+        android:text="Ready to scan..."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="#FF5722" 
+        android:textColor="white"
+        android:gravity="center" />
 
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔍 SCAN NETWORK"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/exploit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💥 EXPLOIT ALL"
+        android:textSize="16sp"
+        android:background="#D32F2F"
+        android:textColor="white"
+        android:layout_marginTop="8dp" />
+
+    <ListView
+        android:id="@+id/targets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results will appear here...\n"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:padding="8dp"
+            android:background="#263238" 
+            android:textColor="#00FF00" />
+    </ScrollView>
 </LinearLayout>
