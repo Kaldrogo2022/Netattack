@@ -1,15 +1,15 @@
 plugins {
-    id 'com.android.application'
+    id "com.android.application"
 }
 
 android {
     namespace "com.netattack.app"
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.netattack.app"
         minSdk 21
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
